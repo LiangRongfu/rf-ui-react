@@ -6,6 +6,21 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/preset-create-react-app"
-  ]
+    "@storybook/preset-create-react-app",
+    "@storybook/addon-a11y",
+    "@storybook/addon-knobs",
+    "@storybook/addon-storysource"
+  ],
+  webpackFinal: async (config) => {
+		config.module.rules.push({
+			test: /\.(ts|tsx)$/,
+			use: [
+				{
+					loader: require.resolve("react-docgen-typescript-loader"),
+				},
+			],
+		});
+		config.resolve.extensions.push(".ts", ".tsx");
+		return config;
+	},
 }
