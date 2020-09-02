@@ -425,7 +425,7 @@ export type ButtonProps = CustormButtonProps &
 
 `;
 
-function Button(props: PropsWithChildren<ButtonProps>) {
+export function Button(props: PropsWithChildren<ButtonProps>) {
 	const { isLoading, loadingText, isLink, children } = props;
 	const buttonInner = (
 		<>
