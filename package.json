@@ -1,7 +1,11 @@
 {
-  "name": "rf-ui-react",
+  "name": "@IMRofu/rf-ui-react",
   "version": "1.2.0",
   "private": false,
+  "repository": "https://github.com/LiangRongfu/rf-ui-react/",
+  "publishConfig": {
+     "registry": "https://npm.pkg.github.com/zhufengnodejs"
+  },
   "dependencies": {
     "axios": "^0.20.0",
     "polished": "^3.6.5",
@@ -16,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook --no-dll --quiet",
     "coverage": "react-scripts test --coverage --watchAll=false"
   },
   "eslintConfig": {
