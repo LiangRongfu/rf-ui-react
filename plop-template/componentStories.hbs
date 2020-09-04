@@ -1,0 +1,19 @@
+import React from "react";
+import { {{headCaps name}} } from "./index";
+import {
+    withKnobs,
+    text,
+    boolean,
+    color,
+    select,
+} from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions";
+
+export default {
+    title: "组件/{{headCaps name}}",
+    component: {{headCaps name}},
+    decorators: [withKnobs],
+};
+
+export const knobs{{headCaps name}} = () => (
+);
