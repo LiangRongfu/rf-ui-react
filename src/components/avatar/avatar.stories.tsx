@@ -3,7 +3,7 @@ import { Avatar, AvatarSize } from "./index";
 import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 
 export default {
-	title: "Avatar",
+	title: "组件/Avatar",
 	component: Avatar,
 	decorators: [withKnobs],
 };

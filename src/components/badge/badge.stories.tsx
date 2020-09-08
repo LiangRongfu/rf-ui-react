@@ -8,7 +8,7 @@ import {
 import { Icon } from "../icon";
 
 export default {
-    title: "Badge",
+    title: "组件/Badge",
     component: Badge,
     decorators: [withKnobs],
 };

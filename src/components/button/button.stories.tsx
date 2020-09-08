@@ -12,7 +12,7 @@ import {
 	select,
 } from "@storybook/addon-knobs";
 export default {
-	title: "Button",
+	title: "组件/Button",
 	component: Button,
 	decorators: [withKnobs],
 };
